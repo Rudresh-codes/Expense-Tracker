@@ -44,7 +44,7 @@ app.post('/api/expenses', async (req, res) => {
 
 app.get('/api/expenses', async (req, res) => {
   try {
-    const expenses = await Expense.find();
+    const expenses = await Expense.find({});
     res.json(expenses);
   } catch (err) {
     res.status(500).json({ message: err.message });
