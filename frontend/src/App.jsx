@@ -4,6 +4,7 @@ import { PlusCircle, Trash2, TrendingDown, Calendar, Tag, DollarSign, BarChart3,
 // Mock API functions for demo
 import axios from "axios";
 
+
 const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000"
 ;
 function App() {
